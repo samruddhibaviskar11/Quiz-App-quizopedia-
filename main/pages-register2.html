@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png">
+    <title>Student Registration - Gate Test</title>
+    <link rel="canonical" href="https://www.wrappixel.com/templates/adminpro/" />
+    <!-- Bootstrap Core CSS -->
+    <link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- page css -->
+    <link href="css/pages/login-register-lock.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- You can change the theme colors from here -->
+    <link href="css/colors/default-dark.css" id="theme" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="loader__figure"></div>
+            <p class="loader__label">Admin Pro</p>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <section id="wrapper" class="login-register login-sidebar"
+        style="background-image:url(../assets/images/background/login-register.jpg);">
+        <div class="login-box card" style="overflow-y: auto;">
+            <div class="card-body">
+                <form class="form-horizontal form-material" id="loginform" action="#">
+                    <a href="javascript:void(0)" class="text-center db"><img src="../assets/images/logo-icon.png"
+                            alt="Home" /><br /><img src="../assets/images/logo-text.png" alt="Home" /></a>
+                    <h3 class="box-title m-t-40 m-b-0">Register Now</h3><small>Create your account and give test</small>
+                    <div class="form-group m-t-20">
+                        <div class="col-xs-12">
+                            <input class="form-control" type="text" required="" id="fName" placeholder="Name">
+                        </div>
+                    </div>
+                    <div class="form-group ">
+                        <div class="col-xs-12">
+                            <input class="form-control" type="text" required="" id="emailId" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-group ">
+                        <div class="col-xs-12">
+                            <input class="form-control" type="password" required="" id="password01"
+                                placeholder="Password">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-xs-12">
+                            <input class="form-control" type="password" required="" id="cnfPassword01"
+                                placeholder="Confirm Password">
+                        </div>
+                    </div>
+                    <div class="form-group m-t-20">
+                        <div class="col-xs-12">
+                            <label for="doBirth"> Date of Birth</label>
+                            <input class="form-control" type="date" required="" id="doBirth"
+                                placeholder="Date Of Birth">
+                        </div>
+                    </div>
+                    <div class="form-group m-t-20">
+                        <div class="col-xs-12">
+
+                            <input class="form-control" type="text" required="" id="collegeName"
+                                placeholder="College Or University">
+                        </div>
+                    </div>
+                    <div class="form-group m-t-20">
+                        <div class="col-xs-12">
+
+                            <input class="form-control" type="text" required="" id="branchName" placeholder="Branch">
+                        </div>
+                    </div>
+                    <div class="form-group m-b-10">
+                        <div class="col-xs-12">
+                            <select name="gender" id="gender" class="form-control">
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-12">
+                            <div class="checkbox checkbox-primary p-t-0">
+                                <input id="checkbox-signup" type="checkbox" required="">
+                                <label for="checkbox-signup"> I agree to all <a href="#">Terms</a></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group text-center m-t-20">
+                        <div class="col-xs-12">
+                            <button class="btn btn-info btn-lg btn-block text-uppercase waves-effect waves-light"
+                                onclick="registerStudent()">Sign Up</button>
+                        </div>
+                    </div>
+                    <div class="form-group m-b-0">
+                        <div class="col-sm-12 text-center">
+                            <p>Already have an account? <a href="index.html" class="text-info m-l-5"><b>Sign In</b></a>
+                            </p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="../assets/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="../assets/plugins/bootstrap/js/popper.min.js"></script>
+    <script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- slimscrollbar scrollbar JavaScript -->
+    <script src="js/perfect-scrollbar.jquery.min.js"></script>
+    <!--Wave Effects -->
+    <script src="js/waves.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $(".preloader").fadeOut();
+        });
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        });
+        // ============================================================== 
+        // Login and Recover Password 
+        // ============================================================== 
+        $('#to-recover').on("click", function () {
+            $("#loginform").slideUp();
+            $("#recoverform").fadeIn();
+        });
+    </script>
+    <script>
+        function getCookie(cname) {
+            var name = cname + "=";
+            var decodedCookie = decodeURIComponent(document.cookie);
+            var ca = decodedCookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+
+                }
+            }
+            return "";
+        }
+
+        function setCookie(cname, cvalue, exdays) {
+            var d = new Date();
+            d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+            var expires = "expires=" + d.toGMTString();
+            document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+        }
+
+        function deleteCookie(cname) {
+            document.cookie = cname + "=;expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+        }
+
+        function checkUserLoggedIn() {
+            if (localStorage.emailId != null || localStorage.fullName != null || localStorage.userid != null) {
+                window.location.href = "index-Dashboard.html";
+            }
+
+
+        }
+        checkUserLoggedIn();
+
+        function validateInputFields() {
+
+        }
+
+        function registerStudent() {
+
+            var fNameIn = $("#fName").val();
+            var emailIDIn = $("#emailId").val();
+            var pswdIn = $("#password01").val();
+            var cnfPswdIn = $("#cnfPassword01").val();
+            var dobIn = $("#doBirth").val();
+            var genderIn = $("#gender").val();
+            var collegeNameIn = $("#collegeName").val();
+            var branchNameIn = $("#branchName").val();
+
+            if (pswdIn != cnfPswdIn) {
+                alert("Please make sure that Password and confirm Password are same");
+
+            }
+            if ($("#checkbox-signup").prop('checked') == false) {
+                alert('please agree terms and conditions')
+            } else {
+                
+                $.ajax({
+                    url: '../DataAccess/signup.php',
+                    type: 'POST',
+                    async: false,
+                    dataType: 'text',
+                    data: {
+                        emailId: emailIDIn,
+                        password: pswdIn,
+                        fullName: fNameIn,
+                        collegeName: collegeNameIn,
+                        Branch: branchNameIn,
+                        dob: dobIn,
+                        gender: genderIn
+                    },
+                    success: function (data, status) {
+                        $.ajax({
+                            url: "../DataAccess/login.php",
+                            async: false,
+                            data: {
+                                emailId: emailIDIn,
+                                password: pswdIn
+                            },
+                            dataType: 'json',
+                            type: 'post',
+                            success: function (data) {
+                                var item = JSON.stringify(data);
+                                //alert(item);
+                                obj = JSON.parse(item);
+                                console.log(obj);
+                                var userid = obj.id;
+                                var fullName = obj.fullName;
+                                var emailId = obj.emailId;
+                                if (typeof (Storage) !== "undefined") {
+
+                                    localStorage.setItem("fullName", fullName);
+                                    localStorage.setItem("userid", userid);
+                                    localStorage.setItem("emailId", emailId);
+                                    //alert(localStorage.fullName)
+                                    window.location.href = "index-Dashboard.html";
+                                }
+                            },
+
+                        });
+
+                    }
+                });
+            }
+        }
+    </script>
+</body>
+
+</html>

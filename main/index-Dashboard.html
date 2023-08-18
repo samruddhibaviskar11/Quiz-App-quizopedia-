@@ -1,0 +1,618 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png">
+    <title>Gate test preparation Test Series</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet">
+    <!-- This page CSS -->
+    <!-- chartist CSS -->
+    <link href="../assets/plugins/chartist-js/dist/chartist.min.css" rel="stylesheet">
+    <link href="../assets/plugins/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.css" rel="stylesheet">
+    <!--c3 CSS -->
+    <link href="../assets/plugins/c3-master/c3.min.css" rel="stylesheet">
+    <!--Toaster Popup message CSS -->
+    <link href="../assets/plugins/toast-master/css/jquery.toast.css" rel="stylesheet">
+    <!--alerts CSS -->
+    <link href="../assets/plugins/sweetalert/sweetalert.css" rel="stylesheet" type="text/css">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Dashboard 1 Page CSS -->
+    <link href="css/pages/dashboard1.css" rel="stylesheet">
+    <!-- You can change the theme colors from here -->
+    <link href="css/colors/default-dark.css" id="theme" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body class="fix-header fix-sidebar card-no-border" onload="startTime()">
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="loader__figure"></div>
+            <p class="loader__label">Gate Test Series</p>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper">
+        <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <header class="topbar">
+            <nav class="navbar top-navbar navbar-expand-md navbar-light">
+                <!-- ============================================================== -->
+                <!-- Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">
+                        <!-- Logo icon --><b>
+                            <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
+                            <!-- Dark Logo icon -->
+                            <img src="../assets/images/logo-icon.png" alt="homepage" class="dark-logo" />
+                            <!-- Light Logo icon -->
+                            <img src="../assets/images/logo-light-icon.png" alt="homepage" class="light-logo" />
+                        </b>
+                        <!--End Logo icon -->
+                        <!-- Logo text --><span>
+                            <!-- dark Logo text -->
+                            <img src="../assets/images/logo-text.png" alt="homepage" class="dark-logo" />
+                            <!-- Light Logo text -->
+                            <img src="../assets/images/logo-light-text.png" class="light-logo" alt="homepage" /></span>
+                    </a>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-collapse">
+                    <!-- ============================================================== -->
+                    <!-- toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav mr-auto">
+                        <!-- This is  -->
+                        <li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up waves-effect waves-dark"
+                                href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
+                        <li class="nav-item"> <a class="nav-link sidebartoggler hidden-sm-down waves-effect waves-dark"
+                                href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
+
+                    </ul>
+                    <!-- ============================================================== -->
+                    <!-- User profile and search -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav my-lg-0">
+
+
+
+                        <!-- ============================================================== -->
+                        <!-- Language -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle waves-effect waves-dark" href="#" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"> <i class="flag-icon flag-icon-in"></i></a>
+
+                        </li>
+                        <!-- ============================================================== -->
+                        <!-- Profile -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle waves-effect waves-dark" href="#" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Hi <span class="username"></span> </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- ============================================================== -->
+        <!-- End Topbar header -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <aside class="left-sidebar">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar">
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                        <li class="user-profile"> <a class="has-arrow waves-effect waves-dark" href="#"
+                                aria-expanded="false">
+                                <!-- <img src="../assets/images/users/profile01.png" alt="user" /> -->
+                                <span
+                                    class="hide-menu username">John Doe</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="#" id="logOut" onclick="userLogOut()">Logout</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-devider"></li>
+                        <li class="nav-small-cap">Subjects</li>
+                        <span id="subjectList">
+                           
+                        </span>
+                        
+                      
+                    </ul>
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page wrapper  -->
+        <!-- ============================================================== -->
+        <div class="page-wrapper">
+            <!-- ============================================================== -->
+            <!-- Container fluid  -->
+            <!-- ============================================================== -->
+            <div class="container-fluid r-aside">
+                <!-- ============================================================== -->
+                <!-- Bread crumb and right sidebar toggle -->
+                <!-- ============================================================== -->
+                <div class="row page-titles">
+                    <div class="col-md-5 align-self-center">
+                        <h3 class="text-themecolor">Dashboard </h3>
+                    </div>
+                    <div class="col-md-7 align-self-center">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
+                            <li class="breadcrumb-item active">Dashboard </li>
+                        </ol>
+                    </div>
+                    <!-- <div class="">
+                        <button
+                            class="right-side-toggle waves-effect waves-light btn-inverse btn btn-circle btn-sm pull-right m-l-10"><i
+                                class="ti-settings text-white"></i></button>
+                    </div> -->
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Bread crumb and right sidebar toggle -->
+                <!-- ============================================================== -->
+                <!-- ============================================================== -->
+                <!-- Sales overview chart -->
+                <!-- ============================================================== -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-body">
+                                Recent Test Results
+                                <hr>
+                                <!-- ============================================================== -->
+                                <!-- Stats box -->
+                                <!-- ============================================================== -->
+                                <div class="row" id="RecentTestResult">
+                                    <div class="col-lg-4">
+                                        <div class="card">
+                                            <div class="card-body cs-shadow">
+                                                <div class="d-flex no-block">
+                                                    <div class="m-r-20 align-self-center"><span
+                                                            class="lstick m-r-20"></span></div>
+                                                    <div class="align-self-center">
+                                                        <h6 class="text-muted m-t-10 m-b-0"></h6>
+                                                        <h2 class="m-t-0"></h2>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ============================================================== -->
+                <!-- Right panel -->
+                <!-- ============================================================== -->
+                <aside class="right-side-panel">
+                    <div class="row">
+                        <!-- Weather Widget -->
+                        <div class="col-md-12 m-t-10">
+                            <h5 class="text-muted m-b-0"></h5>
+                            <h3 id="currentTime"></h3>
+                            <hr>
+                            <table class="table">
+                                <tr>
+                                    <td> Attempted Test</td>
+                                    <td id="attemptedTests" class="text-right font-medium"></td>
+                                </tr>
+                                <tr>
+                                    <td> Unattempted Test</td>
+                                    <td id="unAttemptedTests" class="text-right font-medium"></td>
+                                </tr>
+                                <tr>
+                                    <td> </td>
+                                    <td class="text-right font-medium"></td>
+                                </tr>
+                            </table>
+                            <hr>
+                        </div>
+                        <!-- End Weather Widget -->
+
+
+                    </div>
+                </aside>
+
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Container fluid  -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- footer -->
+            <!-- ============================================================== -->
+            <footer class="footer"> ©QUIZ APP BY GREEN TECHNO </footer>
+            <!-- ============================================================== -->
+            <!-- End footer -->
+            <!-- ============================================================== -->
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Page wrapper  -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="../assets/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap popper Core JavaScript -->
+    <script src="../assets/plugins/bootstrap/js/popper.min.js"></script>
+    <script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- slimscrollbar scrollbar JavaScript -->
+    <script src="js/perfect-scrollbar.jquery.min.js"></script>
+    <!--Wave Effects -->
+    <script src="js/waves.js"></script>
+    <!--Menu sidebar -->
+    <script src="js/sidebarmenu.js"></script>
+
+    <!--Custom JavaScript -->
+    <script src="js/custom.min.js"></script>
+
+
+
+
+    <script>
+        $(document).ready(function () {
+     
+
+            
+            checkUserLoggedIn();
+            getRecentTestResults();
+            getSubjectsList();
+            getAttemptedTestCount();
+            
+        });
+
+        function startTime(){       
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  var date=today.getDate();
+  //var month=today.getMonth();
+  
+var month = new Array();
+month[0] = "January";
+month[1] = "February";
+month[2] = "March";
+month[3] = "April";
+month[4] = "May";
+month[5] = "June";
+month[6] = "July";
+month[7] = "August";
+month[8] = "September";
+month[9] = "October";
+month[10] = "November";
+month[11] = "December";
+var n = month[today.getMonth()];
+  var year=today.getFullYear();
+  document.getElementById('currentTime').innerHTML =
+  date+" "+n+" "+year+" "+h + ":" + m + ":" + s;
+  var t = setTimeout(startTime, 500);
+     }
+        function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+       
+        function getAttemptedTestCount()
+        {
+           
+            var studentId = localStorage.userid;
+            //alert(studentId)
+            $.ajax({
+                url: '../DataAccess/getattemptedtests.php',
+                type: 'POST',
+                async: false,
+                data: { studentId: studentId },
+                dataType: 'json',
+                success: function (data, status) {
+                    var item = JSON.stringify(data);
+                    //alert(item);
+                    obj = JSON.parse(item);
+                    
+                    var attemptedTests = obj[0].attempted;
+                    var unattempted = obj[1].unattempted;
+                    
+                    $('#attemptedTests').html(attemptedTests);
+                    $('#unAttemptedTests').html(unattempted);
+                }
+            });
+        }
+
+        function getSubjectsList() {
+          
+            $.ajax({
+                url: '../DataAccess/subjects.php',
+                async: false,
+                type: 'POST',
+                dataType: 'json',
+                success: function (data, status) {
+
+                    var item = JSON.stringify(data);
+                    //alert(item);
+                    Obj = JSON.parse(item);
+                   var studentId = localStorage.getItem("userid");
+                    $.ajax({
+                        url: '../DataAccess/tests.php',
+                        type: 'POST',
+                        async: false,
+                        data:{studentId:studentId},
+                        dataType: 'json',
+                        success: function (data1, status1) {
+                            var item1 = JSON.stringify(data1);
+                            //alert(item);
+                            Obj1 = JSON.parse(item1);
+                            var html = '';
+                            $.each(Obj, function (i, d) {
+                                
+                                var subjectId = d.id;
+                                html += '<li>';
+                                html += '<a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="true">';
+                                html+='<i class="mdi mdi-gauge"></i> <span class="hide-menu">';
+                                html += d.sub_name;
+                                html += '</span></a>';
+                                $.each(Obj1, function (j, e) {
+                                   
+                                    if (subjectId == e.sub_id) {
+                                        html += '<ul aria-expanded="true" class="">';
+                                        html+='<li><a href="#" id="'+d.sub_id+'" onclick="testInfo('+ e.id +')">';
+                                        html += e.test_name;
+                                        html += ' </a></li></ul> ';
+                                    }
+                                });
+                                html += "</li>";
+
+                            });
+                            $('#subjectList').html(html);
+                           
+
+                        }
+
+                    });
+
+                }
+            });
+        }
+        
+
+          
+        function testInfoAlert() {
+            swal({
+                title: "Begin Test",
+                text: localStorage.testInfo,
+                type: "success",
+                showCancelButton: true,
+                confirmButtonColor: "#005600",
+                confirmButtonText: "Yes, Begin Test",
+                cancelButtonText: "No, Cancel test",
+                closeOnConfirm: false,
+                closeOnCancel: false
+            }, function (isConfirm) {
+                if (isConfirm) {
+                    swal({ title: "Begin Test", text: "Press OK to begin test. Best of Luck!!!", type: "success" },
+                        function (isConfirm) {
+                            if (isConfirm) {
+                                localStorage.removeItem("testInfo");
+                                window.location.href = "testbegin.html";
+                            }
+                        });
+
+                } else {
+                    localStorage.removeItem("testInfo");
+                    localStorage.removeItem("testId");
+                    localStorage.removeItem("qNo");
+                    localStorage.removeItem("subjectName");
+                    localStorage.removeItem("testName");
+
+                    swal("Test Cancelled", "Better Of Luck", "error");
+                }
+            });
+        }
+                
+
+        function testInfo(testId) {
+
+            var testId = testId;
+            $.ajax({
+                url: '../DataAccess/getTestInfo.php',
+                async: false,
+                type: 'POST',
+                data: { testId: testId },
+                dataType: 'json',
+                success: function (data, status) {
+                    var item = JSON.stringify(data);
+                    Obj = JSON.parse(item);
+                    //console.log(Obj)
+                    $.each(Obj, function (i, d) {
+                        localStorage.setItem("testInfo", d.info);
+                        localStorage.setItem("testId", testId);
+                        localStorage.setItem("subjectName", d.sub_name);
+                        localStorage.setItem("testName", d.test_name);
+                        localStorage.setItem("testTime", d.test_total_time);
+                        testInfoAlert();
+                    });
+                }
+            });
+
+        }
+          
+        
+        function getRecentTestResults() {
+            if (localStorage.testId != undefined) {
+           
+                localStorage.removeItem("testId");
+            }
+            
+            var studentId = localStorage.userid;
+            $.ajax({
+                url: '../DataAccess/recentresults.php',
+                async: false,
+                type: 'POST',
+                data: { studentId: studentId },
+                dataType: 'json',
+                success: function (data, status) {
+               
+                    var item = JSON.stringify(data);
+                    //alert(item);
+                    Obj = JSON.parse(item);
+                    var html = '';
+                   // console.log(Obj)
+                    $.each(Obj, function (i, d) {
+                        html += '<div class="col-lg-4"><a href="#!" onclick="getResult(' + d.test_id + ')">';
+                        html += '<div class="card">';
+                        html+='<div class="card-body cs-shadow">';
+                        html+='<div class="d-flex no-block">';
+                        html+='<div class="m-r-20 align-self-center"><span class="lstick m-r-20"></span></div>';
+                        html += '<div class="align-self-center">';
+                        html += '<h6 class="text-muted m-t-10 m-b-0"><b>';
+                        html += d.sub_name;
+                        html += "</b><br>";
+                        html += d.test_name;
+                        html += '</h6> ';
+                        html += '<h2 class="m-t-0">' + d.student_marks + ' / ' + d.test_marks + '</h2></div></div></div></div></a></div>';
+                           
+                    });
+
+                    $('#RecentTestResult').html(html);
+                }
+            });
+        }
+
+        function getResult(testId) {
+
+            localStorage.testId = testId;
+            window.location.replace("result.html");
+
+            
+        }
+        function checkUserLoggedIn() {
+            var fName = localStorage.fullName;
+            var emailId = localStorage.emailId;
+            var id = localStorage.userid;
+           
+            if (fName != null || emailId != null || id != null) {
+                $(".username").html(fName);
+
+            }
+            else {
+                window.location.replace("index.html");
+
+            }
+        }
+        
+            function userLogOut() {
+                //alert(localStorage.fullName)
+                localStorage.removeItem("fullName");
+                localStorage.removeItem("userid");
+                localStorage.removeItem("emailId");
+                //alert(localStorage.fullName)
+
+               window.location.replace("index.html");
+            }
+            $("#logOut").click(function () {
+                userLogOut();
+            });
+
+    </script>
+    <!-- Sweet-Alert  -->
+    <script src="../assets/plugins/sweetalert/sweetalert.min.js"></script>
+    <script src="../assets/plugins/sweetalert/jquery.sweet-alert.custom.js"></script>
+    <!-- ============================================================== -->
+    <!-- This page plugins -->
+    <!-- ============================================================== -->
+    <!--sparkline JavaScript -->
+    <script src="../assets/plugins/sparkline/jquery.sparkline.min.js"></script>
+    <!--morris JavaScript -->
+    <script src="../assets/plugins/chartist-js/dist/chartist.min.js"></script>
+    <script src="../assets/plugins/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.min.js"></script>
+    <!--c3 JavaScript -->
+    <script src="../assets/plugins/d3/d3.min.js"></script>
+    <script src="../assets/plugins/c3-master/c3.min.js"></script>
+    <!-- Popup message jquery -->
+    <script src="../assets/plugins/toast-master/js/jquery.toast.js"></script>
+    <!-- Chart JS -->
+    <script src="js/dashboard1.js"></script>
+    <!-- ============================================================== -->
+    <!-- Style switcher -->
+    <!-- ============================================================== -->
+    <script src="../assets/plugins/styleswitcher/jQuery.style.switcher.js"></script>
+</body>
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

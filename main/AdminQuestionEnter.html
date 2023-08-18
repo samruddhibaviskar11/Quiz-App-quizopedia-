@@ -1,0 +1,424 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png">
+    <title>Gate test preparation Test Series</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet">
+    <!-- This page CSS -->
+    <link rel="stylesheet" href="../assets/plugins/html5-editor/bootstrap-wysihtml5.css" />
+    <!-- chartist CSS -->
+    <link href="../assets/plugins/chartist-js/dist/chartist.min.css" rel="stylesheet">
+    <link href="../assets/plugins/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.css" rel="stylesheet">
+    <!--c3 CSS -->
+    <link href="../assets/plugins/c3-master/c3.min.css" rel="stylesheet">
+    <!--Toaster Popup message CSS -->
+    <link href="../assets/plugins/toast-master/css/jquery.toast.css" rel="stylesheet">
+    <!--alerts CSS -->
+    <link href="../assets/plugins/sweetalert/sweetalert.css" rel="stylesheet" type="text/css">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Dashboard 1 Page CSS -->
+    <link href="css/pages/dashboard1.css" rel="stylesheet">
+    <!-- You can change the theme colors from here -->
+    <link href="css/colors/default-dark.css" id="theme" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body class="fix-header fix-sidebar card-no-border">
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="loader__figure"></div>
+            <p class="loader__label">Gate Test Series</p>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper">
+        <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <header class="topbar">
+            <nav class="navbar top-navbar navbar-expand-md navbar-light">
+                <!-- ============================================================== -->
+                <!-- Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="AdminDashboard.html">
+                        <!-- Logo icon --><b>
+                            <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
+                            <!-- Dark Logo icon -->
+                            <img src="../assets/images/logo-icon.png" alt="homepage" class="dark-logo" />
+                            <!-- Light Logo icon -->
+                            <img src="../assets/images/logo-light-icon.png" alt="homepage" class="light-logo" />
+                        </b>
+                        <!--End Logo icon -->
+                        <!-- Logo text --><span>
+                            <!-- dark Logo text -->
+                            <img src="../assets/images/logo-text.png" alt="homepage" class="dark-logo" />
+                            <!-- Light Logo text -->
+                            <img src="../assets/images/logo-light-text.png" class="light-logo" alt="homepage" /></span>
+                    </a>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-collapse">
+                    <!-- ============================================================== -->
+                    <!-- toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav mr-auto">
+                        <!-- This is  -->
+                        <li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up waves-effect waves-dark"
+                                href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
+                        <li class="nav-item"> <a class="nav-link sidebartoggler hidden-sm-down waves-effect waves-dark"
+                                href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
+
+                    </ul>
+                    <!-- ============================================================== -->
+                    <!-- User profile and search -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav my-lg-0">
+
+                        <!-- ============================================================== -->
+                        <!-- Language -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle waves-effect waves-dark" href="#" data-toggle="dropdown"
+                               aria-haspopup="true" aria-expanded="false"><i class="flag-icon flag-icon-in"></i></a>
+                        </li>
+                        <!-- ============================================================== -->
+                        <!-- Profile -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle waves-effect waves-dark" href="#" data-toggle="dropdown"
+                               aria-haspopup="true" aria-expanded="false">Hi<span class="username">Admin</span></a>
+                        </li>
+                        
+
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- ============================================================== -->
+        <!-- End Topbar header -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <aside class="left-sidebar">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar">
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                        <li class="user-profile">
+                            <span class="hide-menu username">Admin</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="#" onclick="logOut()">Logout</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-devider"></li>
+                       <!-- <li class="nav-small-cap">Subjects</li>-->
+                        <li>
+                            <a class="hasarrow waves-effect waves-dark" href="AllQuestions.html"  aria-expanded="true">
+                               <!-- <i class="mdi mdi-gauge"></i>--> 
+                                <span class="hide-menu">
+                                    See All Questions
+                                </span>
+                            </a>
+                            </li>
+
+                    </ul>
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page wrapper  -->
+        <!-- ============================================================== -->
+        <div class="page-wrapper">
+            <!-- ============================================================== -->
+            <!-- Container fluid  -->
+            <!-- ============================================================== -->
+            <div class="container-fluid r-aside">
+                <!-- ============================================================== -->
+                <!-- Bread crumb and right sidebar toggle -->
+                <!-- ============================================================== -->
+                <div class="row page-titles">
+                    <div class="col-md-5 align-self-center">
+                        <h3 class="text-themecolor">Add Question </h3>
+                    </div>
+                    <div class="col-md-7 align-self-center">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
+                            <li class="breadcrumb-item active">Add Question</li>
+                        </ol>
+                    </div>
+                    <!-- <div class="">
+                        <button
+                            class="right-side-toggle waves-effect waves-light btn-inverse btn btn-circle btn-sm pull-right m-l-10"><i
+                                class="ti-settings text-white"></i></button>
+                    </div> -->
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Bread crumb and right sidebar toggle -->
+                <!-- ============================================================== -->
+                <!-- ============================================================== -->
+                <!-- Sales overview chart -->
+                <!-- ============================================================== -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <form method="post">
+                                    <div class="form-group floating-labels">
+                                        <textarea class="textarea_editor form-control" rows="5" placeholder="Enter Question ..." id="questionText"></textarea>
+                                    </div>
+                                
+                                <hr>
+                                <!-- ============================================================== -->
+                                <!-- Stats box -->
+                                <!-- ============================================================== -->
+                                <div class="demo-radio-button">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label for="input1">1) Option</label>
+                                            <input type="text" class="form-control" id="option1">
+                                        <span class="bar"></span>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="input1">2) Option</label>
+                                            <input type="text" class="form-control" id="option2">
+                                        <span class="bar"></span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label for="input1">3) Option</label>
+                                            <input type="text" class="form-control" id="option3">
+                                        <span class="bar"></span>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="input1">4) Option</label>
+                                            <input type="text" class="form-control" id="option4">
+                                        <span class="bar"></span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            Correct Answer
+                                            <select id="correctAnswer" class="form-control">
+                                                <option value="a">Option 1</option>
+                                                <option value="b">Option 2</option>
+                                                <option value="c">Option 3</option>
+                                                <option value="d">Option 4</option>
+
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                       
+                                         </div>
+                                    <div class="col-md-4">
+                                         </div>
+                                        <div class="col-md-4">
+                                            <button onclick="setQuestion()" class="btn btn-info waves-effect waves-light m-t-10">Add Question</button> </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ============================================================== -->
+    <!-- Right panel -->
+    <!-- ============================================================== -->
+    
+    <!-- ============================================================== -->
+    <!-- End Container fluid  -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- footer -->
+    <!-- ============================================================== -->
+    <footer class="footer"> © 2020 </footer>
+    <!-- ============================================================== -->
+    <!-- End footer -->
+    <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Page wrapper  -->
+    <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="../assets/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap popper Core JavaScript -->
+    <script src="../assets/plugins/bootstrap/js/popper.min.js"></script>
+    <script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- slimscrollbar scrollbar JavaScript -->
+    <script src="js/perfect-scrollbar.jquery.min.js"></script>
+    <!--Wave Effects -->
+    <script src="js/waves.js"></script>
+    <!--Menu sidebar -->
+    <script src="js/sidebarmenu.js"></script>
+
+    <!--Custom JavaScript -->
+    <script src="js/custom.min.js"></script>
+    <script>
+    </script>
+    <!-- Sweet-Alert  -->
+    <script src="../assets/plugins/sweetalert/sweetalert.min.js"></script>
+    <script src="../assets/plugins/sweetalert/jquery.sweet-alert.custom.js"></script>
+    <!-- ============================================================== -->
+    <!-- This page plugins -->
+    <!-- ============================================================== -->
+    <!--sparkline JavaScript -->
+    <script src="../assets/plugins/sparkline/jquery.sparkline.min.js"></script>
+    <!--morris JavaScript -->
+    <script src="../assets/plugins/chartist-js/dist/chartist.min.js"></script>
+    <script src="../assets/plugins/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.min.js"></script>
+    <!--c3 JavaScript -->
+    <script src="../assets/plugins/d3/d3.min.js"></script>
+    <script src="../assets/plugins/c3-master/c3.min.js"></script>
+    <!-- Popup message jquery -->
+    <script src="../assets/plugins/toast-master/js/jquery.toast.js"></script>
+    <!-- Chart JS -->
+    <!-- <script src="js/dashboard1.js"></script> -->
+     <!-- wysuhtml5 Plugin JavaScript -->
+     <script src="../assets/plugins/html5-editor/wysihtml5-0.3.0.js"></script>
+     <script src="../assets/plugins/html5-editor/bootstrap-wysihtml5.js"></script>
+     <script>
+         $(document).ready(function () {
+          
+         checkUserLoggedIn();
+     });
+
+         function setQuestion() {
+           
+             var questionText = document.getElementById("questionText").value;
+             var option1 = document.getElementById("option1").value;
+             var option2 = document.getElementById("option2").value;
+             var option3 = document.getElementById("option3").value;
+             var option4 = document.getElementById("option4").value;
+
+             var e = document.getElementById("correctAnswer");
+             var correctAnswer = e.options[e.selectedIndex].value;
+
+             if (questionText == null || questionText == "" ||
+                 option1 == null || option1 == "" ||
+                 option2 == null || option2 == "" ||
+                 option3 == null || option3 == "" ||
+                 option4 == null || option4 == "" ||
+                 correctAnswer == null || correctAnswer == "")
+             {
+                 alert("please fill all the details!!!")
+              }
+             else {
+                 var questionNo = 1;
+                 $.ajax({
+                     url: '../DataAccess/getAllQuestions.php',
+                     async: false,
+                     type: 'POST',
+                     data: { testId: localStorage.testId },
+                     dataType: 'json',
+                     success: function (data, status) {
+                         var item = JSON.stringify(data);
+                         Obj = JSON.parse(item);
+                         $.each(Obj, function (i, d) {
+                             questionNo++;
+                                
+                         });
+
+                     }
+                 });
+
+                 
+                 $.ajax({
+                     url: '../DataAccess/setQuestion.php',
+                     async: false,
+                     type: 'POST',
+                     data: { testId: localStorage.testId, questionNo: questionNo,  questionText: questionText, option1: option1, option2: option2, option3: option3, option4: option4, correctAnswer: correctAnswer },
+                     dataType: 'text',
+                     success: function (data, status) {
+                         swal("Question Added Successfully", "", "success");
+                        window.location.href = "AllQuestions.html";
+
+
+                     }
+                 });
+             }
+         }
+         function checkUserLoggedIn() {
+
+             if (localStorage.adminLogin == undefined) {
+                 window.location.href = "AdminLogin.html";
+
+             }
+             else {
+             }
+         }
+
+         function logout() {
+             //alert(localStorage.adminLogin)
+             localStorage.removeItem("adminLogin");
+
+             window.location.replace("AdminLogin.html");
+         }
+        
+            $("#logOut").click(function () {
+                logOut();
+            });
+
+     </script>
+    <!-- ============================================================== -->
+    <!-- Style switcher -->
+    <!-- ============================================================== -->
+    <script src="../assets/plugins/styleswitcher/jQuery.style.switcher.js"></script>
+</body>
+
+
+</html>

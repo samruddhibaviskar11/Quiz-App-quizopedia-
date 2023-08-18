@@ -1,0 +1,820 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png">
+    <title>Gate test preparation Test Series</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet">
+    <!-- This page CSS -->
+    <!-- chartist CSS -->
+    <link href="../assets/plugins/chartist-js/dist/chartist.min.css" rel="stylesheet">
+    <link href="../assets/plugins/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.css" rel="stylesheet">
+    <!--c3 CSS -->
+    <link href="../assets/plugins/c3-master/c3.min.css" rel="stylesheet">
+    <!--Toaster Popup message CSS -->
+    <link href="../assets/plugins/toast-master/css/jquery.toast.css" rel="stylesheet">
+    <!--alerts CSS -->
+    <link href="../assets/plugins/sweetalert/sweetalert.css" rel="stylesheet" type="text/css">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Dashboard 1 Page CSS -->
+    <link href="css/pages/dashboard1.css" rel="stylesheet">
+    <!-- You can change the theme colors from here -->
+    <link href="css/colors/default-dark.css" id="theme" rel="stylesheet">
+    <style>
+        .block {
+            display: block;
+            width: 100%;
+            border: none;
+            background-color: rgb(243, 117, 0);
+            padding: 14px 28px;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+        }
+    </style>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body class="fix-header fix-sidebar card-no-border">
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="loader__figure"></div>
+            <p class="loader__label">Gate Test Series</p>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper">
+        <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <header class="topbar">
+            <nav class="navbar top-navbar navbar-expand-md navbar-light">
+                <!-- ============================================================== -->
+                <!-- Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="AdminDashboard.html">
+                        <!-- Logo icon --><b>
+                            <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
+                            <!-- Dark Logo icon -->
+                            <img src="../assets/images/logo-icon.png" alt="homepage" class="dark-logo" />
+                            <!-- Light Logo icon -->
+                            <img src="../assets/images/logo-light-icon.png" alt="homepage" class="light-logo" />
+                        </b>
+                        <!--End Logo icon -->
+                        <!-- Logo text --><span>
+                            <!-- dark Logo text -->
+                            <!--<img src="../assets/images/logo-text.png" alt="homepage" class="dark-logo" />-->
+                            <!-- Light Logo text -->
+                            <img src="../assets/images/logo-light-text.png" class="light-logo" alt="homepage" />
+                        </span>
+                    </a>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-collapse">
+                    <!-- ============================================================== -->
+                    <!-- toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav mr-auto">
+                        <!-- This is  -->
+                        <li class="nav-item">
+                            <a class="nav-link nav-toggler hidden-md-up waves-effect waves-dark"
+                               href="javascript:void(0)"><i class="ti-menu"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link sidebartoggler hidden-sm-down waves-effect waves-dark"
+                               href="javascript:void(0)"><i class="ti-menu"></i></a>
+                        </li>
+                    </ul>
+                    <!-- ============================================================== -->
+                    <!-- User profile and search -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav my-lg-0">
+                        <!-- ============================================================== -->
+                        <!-- Language -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle waves-effect waves-dark" href="#" data-toggle="dropdown"
+                               aria-haspopup="true" aria-expanded="false"><i class="flag-icon flag-icon-in"></i></a>
+                        </li>
+                        <!-- ============================================================== -->
+                        <!-- Profile -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle waves-effect waves-dark" href="#" data-toggle="dropdown"
+                               aria-haspopup="true" aria-expanded="false">
+                                Hi <span class="username">Admin</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- ============================================================== -->
+        <!-- End Topbar header -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <aside class="left-sidebar">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar">
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                        <li class="user-profile">
+                            <a class="has-arrow waves-effect waves-dark" href="#"
+                               aria-expanded="false">
+                                <!-- <img src="../assets/images/users/profile01.png" alt="user" /> -->
+                                <span class="hide-menu username">Admin</span>
+                            </a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="#" id="logOut" onclick="logout()">Logout</a></li>
+                            </ul>
+                        </li>
+                        <li> <a class="has-arrow waves-effect waves-dark" href="AdminResult.html" aria-expanded="false"><i
+                                    class="mdi mdi-gauge"></i><span class="hide-menu">Students Result</span></a>
+
+                        </li>
+                        <!--<li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i
+                                    class="mdi mdi-gauge"></i><span class="hide-menu"></span></a>
+                        </li>-->
+
+                    </ul>
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page wrapper  -->
+        <!-- ============================================================== -->
+        <div class="page-wrapper">
+            <!-- ============================================================== -->
+            <!-- Container fluid  -->
+            <!-- ============================================================== -->
+            <div class="container-fluid r-aside">
+                <!-- ============================================================== -->
+                <!-- Bread crumb and right sidebar toggle -->
+                <!-- ============================================================== -->
+                <div class="row page-titles">
+                    <div class="col-md-5 align-self-center">
+                        <h3 class="text-themecolor">Dashboard </h3>
+                    </div>
+                    <div class="col-md-7 align-self-center">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
+                            <li class="breadcrumb-item active">Dashboard </li>
+                        </ol>
+                    </div>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Bread crumb and right sidebar toggle -->
+                <!-- ============================================================== -->
+                <!-- ============================================================== -->
+                <!-- Sales overview chart -->
+                <!-- ============================================================== -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-body">
+
+                                <!-- ============================================================== -->
+                                <!-- Stats box -->
+                                <!-- ============================================================== -->
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="card">
+                                            <div class="card-body cs-shadow">
+                                                <div class="d-flex no-block">
+                                                    <div class="m-r-20 align-self-center">
+                                                        <span class="lstick m-r-20"></span>
+                                                    </div>
+                                                    <div class="align-self-center">
+                                                        <h6 class="text-muted m-t-10 m-b-0">Subjects</h6>
+                                                        <h2 class="m-t-0" id="subCount">4</h2>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="card">
+                                            <div class="card-body cs-shadow">
+                                                <div class="d-flex no-block">
+                                                    <div class="m-r-20 align-self-center">
+                                                        <span class="lstick m-r-20"></span>
+                                                    </div>
+                                                    <div class="align-self-center">
+                                                        <h6 class="text-muted m-t-10 m-b-0">Total Tests</h6>
+                                                        <h2 class="m-t-0" id="testCount">8</h2>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="card">
+                                            <div class="card-body cs-shadow">
+                                                <div class="d-flex no-block">
+                                                    <div class="m-r-20 align-self-center">
+                                                        <span class="lstick m-r-20"></span>
+                                                    </div>
+                                                    <div class="align-self-center">
+                                                        <h6 class="text-muted m-t-10 m-b-0">Registerd Students</h6>
+                                                        <h2 class="m-t-0" id="studentCount">150</h2>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div>
+                                            <h3>Subjects</h3>
+                                            <ul id="subjects">
+                                                <li>
+                                                    OOPS
+
+                                                </li>
+
+                                                <li>Algorithm</li>
+                                                <li>OS</li>
+                                                <li>Data Structure</li>
+                                            </ul>
+                                            <Button class="btn-primary" onclick="newSubject()">
+                                                Add Subject
+                                            </Button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div>
+                                            <h3>Tests</h3>
+                                            <ul id="tests">
+
+                                                <ul>
+                                                    <li> <a href="AdminQuestionEnter.html?id=2">OOPS Test1</a></li>
+                                                    <li><a href="AdminQuestionEnter.html?id=3">OOPS Test2</a></li>
+                                                    <Button class="btn-primary" onclick="newTest()">
+                                                        Add Test
+                                                    </Button>
+                                                </ul>
+                                                <li>Algorithm</li>
+                                                <ul>
+                                                    <li><a href="AdminQuestionEnter.html?id=4">Algorithm Test1</a></li>
+                                                    <li><a href="AdminQuestionEnter.html?id=5">Algorithm Test2</a></li>
+                                                    <Button class="btn-primary" onclick="newTest()">
+                                                        Add Test
+                                                    </Button>
+                                                </ul>
+                                                <li>OS</li>
+                                                <ul>
+                                                    <li>OS Test1</li>
+                                                    <li>OS Test2</li>
+                                                    <Button class="btn-primary">
+                                                        Add Test
+                                                    </Button>
+                                                </ul>
+                                                <li>Data Structure</li>
+                                                <ul>
+                                                    <li>Data Structure Test1</li>
+                                                    <li>Data Structure Test2</li>
+                                                    <Button class="btn-primary">
+                                                        Add Test
+                                                    </Button>
+                                                </ul>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ============================================================== -->
+                <!-- Right panel -->
+                <!-- ============================================================== -->
+                <aside class="right-side-panel">
+                    <div class="row">
+                        <!-- Weather Widget -->
+                        <div class="col-md-12 m-t-10">
+                            <h5 class="text-muted m-b-0"></h5>
+                            <!--  <h3>Mon, July 14 11 AM</h3>-->
+                            <!--<hr>
+                            <table class="table">
+                                <tr>
+                                    <td><button class="block">Delete Subject</button></td>
+
+                                </tr>
+                                <tr>
+                                    <td> <button class="block">Delete Test</button></td>
+
+                                </tr>
+                                <tr>
+                                    <td> </td>
+                                    <td class="text-right font-medium"></td>
+                                </tr>
+                            </table>
+                            <hr>-->
+                        </div>
+                        <!-- End Weather Widget -->
+
+                    </div>
+                </aside>
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Container fluid  -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- footer -->
+            <!-- ============================================================== -->
+            <footer class="footer"> © QUIZ APP BY GREEN TECHNO </footer>
+            <!-- ============================================================== -->
+            <!-- End footer -->
+            <!-- ============================================================== -->
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Page wrapper  -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="../assets/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap popper Core JavaScript -->
+    <script src="../assets/plugins/bootstrap/js/popper.min.js"></script>
+    <script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- slimscrollbar scrollbar JavaScript -->
+    <script src="js/perfect-scrollbar.jquery.min.js"></script>
+    <!--Wave Effects -->
+    <script src="js/waves.js"></script>
+    <!--Menu sidebar -->
+    <script src="js/sidebarmenu.js"></script>
+    <!--Custom JavaScript -->
+    <script src="js/custom.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            checkUserLoggedIn();
+            getSubjectCount();
+            getTestCount();
+            getTotalStudent();
+            getSubjectsList();
+            getTestsList();
+
+        });
+
+
+        function getSubjectCount() {
+
+            $.ajax({
+                url: '../DataAccess/getSubjectCount.php',
+                type: 'POST',
+                async: false,
+                dataType: 'json',
+                success: function (data, status) {
+                    var item = JSON.stringify(data);
+
+                    Obj = JSON.parse(item);
+
+                    $("#subCount").html(Obj[0].subjects)
+
+                }
+            });
+        }
+
+        function getTestCount() {
+
+            $.ajax({
+                url: '../DataAccess/getTestCount.php',
+                type: 'POST',
+                async: false,
+                dataType: 'json',
+                success: function (data, status) {
+                    var item = JSON.stringify(data);
+
+                    Obj = JSON.parse(item);
+
+                    $("#testCount").html(Obj[0].tests)
+
+
+                }
+            });
+        }
+
+        function getTotalStudent() {
+
+            $.ajax({
+                url: '../DataAccess/getStudentCount.php',
+                type: 'POST',
+                async: false,
+                dataType: 'json',
+                success: function (data, status) {
+                    var item = JSON.stringify(data);
+
+                    Obj = JSON.parse(item);
+
+                    $("#studentCount").html(Obj[0].students)
+
+
+                }
+            });
+        }
+
+        function getSubjectsList() {
+
+            $.ajax({
+                url: '../DataAccess/subjects.php',
+                async: false,
+                type: 'POST',
+                dataType: 'json',
+                success: function (data, status) {
+
+                    var item = JSON.stringify(data);
+                    //alert(item);
+                    Obj = JSON.parse(item);
+
+                    var html = '';
+                    $.each(Obj, function (i, d) {
+                        html += '<li>';
+                        html += d.sub_name;
+                        html += '&nbsp;&nbsp;&nbsp;<a href="#!" onclick="deleteSubject(' + d.id + ')"><i class="fa fa-times" aria-hidden="true"></i></a>';
+                        html += '</li>';
+
+
+
+                    });
+
+                    $('#subjects').html(html);
+
+
+                }
+
+            });
+
+        }
+
+        function getTestsList() {
+
+            $.ajax({
+                url: '../DataAccess/subjects.php',
+                async: false,
+                type: 'POST',
+                dataType: 'json',
+                success: function (data, status) {
+
+                    var item = JSON.stringify(data);
+                    //alert(item);
+                    Obj = JSON.parse(item);
+                    //  var studentId = getCookie("studentId");
+                    $.ajax({
+                        url: '../DataAccess/testsAll.php',
+                        type: 'POST',
+                        type: 'POST',
+                        async: false,
+                        dataType: 'json',
+                        success: function (data1, status1) {
+                            var item1 = JSON.stringify(data1);
+                            //alert(item);
+                            Obj1 = JSON.parse(item1);
+                            var html = '';
+                            $.each(Obj, function (i, d) {
+
+                                var subjectId = d.id;
+                                html += '<li>';
+                                html += '<span>';
+                                html += d.sub_name;
+                                html += '</span><br>';
+                                $.each(Obj1, function (j, e) {
+
+                                    if (subjectId == e.sub_id) {
+                                        html += '<ul>';
+                                        html += '<li><a href="#!" onclick="openTestQues('+e.id+')">';
+                                        html += e.test_name;
+                                        html += '</a>&nbsp;&nbsp;&nbsp;<a href="#!" onclick="deleteTest(' + e.id + ')"><i class="fa fa-times" aria-hidden="true"></i></a>';
+                                        html += ' </li></ul> ';
+                                       
+                                    }
+                                });
+                                html += '<Button class="btn-primary" onclick="newTest(' + subjectId + ')">';
+                                html += ' Add Test';
+                                html += ' </button>';
+                                html += "</li>";
+
+                            });
+                            $('#tests').html(html);
+
+
+                        }
+
+                    });
+
+                }
+            });
+
+        }
+
+        function deleteSubject(subId) {
+            var subjectId = subId;
+            var r = confirm("Delete Subject?");
+            if (r == true) {
+                $.ajax({
+                    url: '../DataAccess/deleteSubject.php',
+                    async: false,
+                    async: false,
+                    data: { subjectId: subjectId },
+                    type: 'POST',
+                    dataType: 'text',
+                    success: function (data, status) {
+                        swal("Subject Deleted", "", "success");
+                        getSubjectsList();
+                        getTestsList();
+
+                    }
+
+                });
+            } else {
+              
+            }
+        }
+
+        function deleteTest(testId) {
+            var testId = testId;
+            var r = confirm("Delete Test?");
+            if (r == true) {
+                $.ajax({
+                    url: '../DataAccess/deleteTest.php',
+                    async: false,
+                    async: false,
+                    data: { testId: testId },
+                    type: 'POST',
+                    dataType: 'text',
+                    success: function (data, status) {
+                        swal("Test Deleted", "", "success");
+                        getSubjectsList();
+                        getTestsList();
+
+                    }
+
+                });
+            } else {
+
+            }
+        }
+        function openTestQues(testId) {
+         
+            localStorage.setItem("testId", testId);
+
+           
+            window.location.replace("AllQuestions.html")
+
+           
+        }
+
+
+        function checkUserLoggedIn() {
+
+            if (localStorage.adminLogin == undefined) {
+                window.location.href = "AdminLogin.html";
+
+            }
+            else {
+            }
+        }
+
+        function logout() {
+            //alert(localStorage.adminLogin)
+            localStorage.removeItem("adminLogin");
+
+            window.location.replace("AdminLogin.html");
+        }
+      
+            $("#logOut").click(function () {
+            logOut();
+            });
+
+
+        function newSubject() {
+            swal({
+                title: "Enter New Subject",
+                type: "input",
+                showCancelButton: true,
+                closeOnConfirm: false,
+                animation: "slide-from-top",
+                inputPlaceholder: "Subject Name"
+            }, function (inputValue) {
+                if (inputValue === false) return false;
+
+                if (inputValue === "") {
+                    swal.showInputError("Enter Subject Name!");
+                    return false
+                }
+                else {
+                    var subjectName = inputValue;
+                    $.ajax({
+                        url: '../DataAccess/addSubject.php',
+                        async: false,
+                        async: false,
+                        data: { subjectName: subjectName },
+                        type: 'POST',
+                        dataType: 'text',
+                        success: function (data, status) {
+                            swal("Subject Added", "", "success");
+                            getSubjectsList();
+                            getTestsList();
+
+                        }
+
+                    });
+                }
+
+            });
+        }
+        function addTest() {
+
+            var subjectId = localStorage.subjectId;
+            var testName = document.getElementById("testName").value;
+            var testMarks = document.getElementById("testMarks").value;
+            var testInfo = document.getElementById("testInfo").value;
+            var totalTime = document.getElementById("totalTime").value;
+            if (!testName ||!testMarks || !testInfo ||!totalTime) {
+                alert("please fill all the details!!!")
+            }
+            else {
+            $.ajax({
+                url: '../DataAccess/addTest.php',
+                async: false,
+                data: { subjectId: subjectId, testName: testName, testMarks: testMarks, testInfo: testInfo,totalTime: totalTime },
+                type: 'POST',
+                dataType: 'text',
+                success: function (data, status) {
+                    var item = JSON.stringify(data);
+                    Obj = JSON.parse(item);
+                    localStorage.setItem("testId", Obj[0].test_id)
+                    swal({
+                        title: "Test Added",
+                        closeOnConfirm: false,
+                        animation: "slide-from-top",
+                    }, function () {
+                        window.location.replace("AdminDashboard.html")
+                    });
+ 
+
+
+                }
+
+            });
+            }
+        }
+        function newTest(subId,testId) {
+            localStorage.subjectId = subId;
+            localStorage.testId = testId;
+            
+            $('#myModal').modal('toggle');
+            
+          
+        }
+
+            // function getCookie(cname) {
+            //     var name = cname + "=";
+            //     var decodedCookie = decodeURIComponent(document.cookie);
+            //     var ca = decodedCookie.split(';');
+            //     for (var i = 0; i < ca.length; i++) {
+            //         var c = ca[i];
+            //         while (c.charAt(0) == ' ') {
+            //             c = c.substring(1);
+            //         }
+            //         if (c.indexOf(name) == 0) {
+            //             return c.substring(name.length, c.length);
+
+            //         }
+            //     }
+            //     return "";
+            // }
+            // function setCookie(cname, cvalue, exdays) {
+            //     var d = new Date();
+            //     d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+            //     var expires = "expires=" + d.toGMTString();
+            //     document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+            // }
+            // function deleteCookie(cname) {
+            //     document.cookie = cname + "=;expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+            // }
+            // function checkUserLoggedIn() {
+            //     var fName = getCookie("fullName");
+            //     var eId = getCookie("emailId");
+            //     var pswd = getCookie("password");
+
+            //     if (fName == "" || eId == "" || pswd == "") {
+            //         deleteCookie("fullName");
+            //         deleteCookie("password");
+            //         deleteCookie("emailId");
+            //         window.location.replace("index.html");
+            //     }else{
+            //         $(".username").html(fName);
+            //     }
+            // }
+            // checkUserLoggedIn();
+
+            // function userLogOut() {
+            //     deleteCookie("fullName");
+            //     deleteCookie("password");
+            //     deleteCookie("emailId");
+            //     window.location.replace("index.html");
+            // }
+            // $("#logOut").click(function () {
+            //     userLogOut();
+            // });
+
+    </script>
+    <!-- Sweet-Alert  -->
+    <script src="../assets/plugins/sweetalert/sweetalert.min.js"></script>
+    <script src="../assets/plugins/sweetalert/jquery.sweet-alert.custom.js"></script>
+    <!-- ============================================================== -->
+    <!-- This page plugins -->
+    <!-- ============================================================== -->
+    <!--sparkline JavaScript -->
+    <script src="../assets/plugins/sparkline/jquery.sparkline.min.js"></script>
+    <!--morris JavaScript -->
+    <script src="../assets/plugins/chartist-js/dist/chartist.min.js"></script>
+    <script src="../assets/plugins/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.min.js"></script>
+    <!--c3 JavaScript -->
+    <script src="../assets/plugins/d3/d3.min.js"></script>
+    <script src="../assets/plugins/c3-master/c3.min.js"></script>
+    <!-- Popup message jquery -->
+    <script src="../assets/plugins/toast-master/js/jquery.toast.js"></script>
+    <!-- Chart JS -->
+    <!-- <script src="js/dashboard1.js"></script> -->
+    <!-- ============================================================== -->
+    <!-- Style switcher -->
+    <!-- ============================================================== -->
+    <script src="../assets/plugins/styleswitcher/jQuery.style.switcher.js"></script>
+
+
+
+
+    <div id="myModal" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Add Test</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <input type="text" class="form-control" id="testName" placeholder="Enter Test Name"><br /><br />
+                    <input type="text" class="form-control" id="testMarks" placeholder="Enter Test Marks"><br /><br />
+                    <input type="text" class="form-control" id="testInfo" placeholder="Enter Test Info"><br /><br />
+                    <label>Enter Test Time (In Minutes)</label><input type="text" class="form-control" id="totalTime">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" onclick="addTest()" class="btn btn-primary">Add Test</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>

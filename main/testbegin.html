@@ -1,0 +1,804 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png">
+    <title>Gate test preparation Test Series</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet">
+    <!-- This page CSS -->
+    <!-- chartist CSS -->
+    <link href="../assets/plugins/chartist-js/dist/chartist.min.css" rel="stylesheet">
+    <link href="../assets/plugins/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.css" rel="stylesheet">
+    <!--c3 CSS -->
+    <link href="../assets/plugins/c3-master/c3.min.css" rel="stylesheet">
+    <!--Toaster Popup message CSS -->
+    <link href="../assets/plugins/toast-master/css/jquery.toast.css" rel="stylesheet">
+    <!--alerts CSS -->
+    <link href="../assets/plugins/sweetalert/sweetalert.css" rel="stylesheet" type="text/css">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Dashboard 1 Page CSS -->
+    <link href="css/pages/dashboard1.css" rel="stylesheet">
+    <!-- You can change the theme colors from here -->
+    <link href="css/colors/default-dark.css" id="theme" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="fix-header fix-sidebar card-no-border" onload="countdown()">
+    
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="loader__figure"></div>
+            <p class="loader__label">Gate Test Series</p>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper">
+        <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <header class="topbar">
+            <nav class="navbar top-navbar navbar-expand-md navbar-light">
+                <!-- ============================================================== -->
+                <!-- Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#!">
+                        <!-- Logo icon --><b>
+                            <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
+                            <!-- Dark Logo icon -->
+                            <img src="../assets/images/logo-icon.png" alt="homepage" class="dark-logo" />
+                            <!-- Light Logo icon -->
+                            <img src="../assets/images/logo-light-icon.png" alt="homepage" class="light-logo" />
+                        </b>
+                        <!--End Logo icon -->
+                        <!-- Logo text --><span>
+                            <!-- dark Logo text -->
+                            <img src="../assets/images/logo-text.png" alt="homepage" class="dark-logo" />
+                            <!-- Light Logo text -->
+                            <img src="../assets/images/logo-light-text.png" class="light-logo" alt="homepage" />
+                        </span>
+                    </a>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-collapse">
+                    <!-- ============================================================== -->
+                    <!-- toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav mr-auto">
+                        <!-- This is  -->
+                        <li class="nav-item">
+                            <a class="nav-link nav-toggler hidden-md-up waves-effect waves-dark"
+                               href="javascript:void(0)"><i class="ti-menu"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link sidebartoggler hidden-sm-down waves-effect waves-dark"
+                               href="javascript:void(0)"><i class="ti-menu"></i></a>
+                        </li>
+                    </ul>
+                    <!-- ============================================================== -->
+                    <!-- User profile and search -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav my-lg-0">
+
+                        <!-- ============================================================== -->
+                        <!-- Language -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle waves-effect waves-dark" href="#" data-toggle="dropdown"
+                               aria-haspopup="true" aria-expanded="false"><i class="flag-icon flag-icon-in"></i></a>
+                        </li>
+                        <!-- ============================================================== -->
+                        <!-- Profile -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle waves-effect waves-dark" href="#" data-toggle="dropdown"
+                               aria-haspopup="true" aria-expanded="false">Hi<span class="username">John DOe</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- ============================================================== -->
+        <!-- End Topbar header -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <aside class="left-sidebar">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar">
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                        <li class="user-profile">
+                            <a class="has-arrow waves-effect waves-dark" href="#"
+                               aria-expanded="false">
+                                <!-- <img src="../assets/images/users/profile01.png" alt="user" /> -->
+                                <span class="hide-menu username">John Doe</span>
+                            </a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="#" id="logOut">Logout</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-devider"></li>
+                        <li class="nav-small-cap">Questions</li>
+                        
+                            <span id="quesNo">
+                                <li><a href="#">Question 01 </a></li>
+
+
+                            </span>
+                        
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page wrapper  -->
+        <!-- ============================================================== -->
+        <div class="page-wrapper">
+            <!-- ============================================================== -->
+            <!-- Container fluid  -->
+            <!-- ============================================================== -->
+            <div class="container-fluid r-aside">
+                <!-- ============================================================== -->
+                <!-- Bread crumb and right sidebar toggle -->
+                <!-- ============================================================== -->
+                <div class="row page-titles">
+                    <div class="col-md-5 align-self-center">
+                        <h3 class="text-themecolor" id="testName">Test </h3>
+                    </div>
+                    <div class="col-md-7 align-self-center">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
+                            <li class="breadcrumb-item active">Test </li>
+                        </ol>
+                    </div>
+                    <!-- <div class="">
+                        <button
+                            class="right-side-toggle waves-effect waves-light btn-inverse btn btn-circle btn-sm pull-right m-l-10"><i
+                                class="ti-settings text-white"></i></button>
+                    </div> -->
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Bread crumb and right sidebar toggle -->
+                <!-- ============================================================== -->
+                <!-- ============================================================== -->
+                <!-- Sales overview chart -->
+                <!-- ============================================================== -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-body" id="questionAndOptions">
+                                <span class="cs-bold text-info" >Question No. </span>
+                                <span class="cs-bold text-info" id="qNo"></span>:&nbsp;<span id="qText"></span><hr>
+                                <div class="demo-radio-button">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <input name="options" type="radio" class="with-gap" id="radio_a" value="a"/>
+                                            <label for="radio_a" id="option_a" ></label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input name="options" type="radio" class="with-gap" id="radio_b" value="b" />
+                                            <label for="radio_b"  id="option_b"></label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <input name="options" type="radio" class="with-gap" id="radio_c" value="c" />
+                                            <label for="radio_c"  id="option_c"></label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input name="options" type="radio" class="with-gap" id="radio_d" value="d" />
+                                            <label for="radio_d"  id="option_d"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <button onclick="getPreviousQuestion()" class="btn btn-info waves-effect waves-light m-t-10" id="prevQues">
+                                            ◄
+                                            Previous
+                                        </button>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <!--<button type="submit" class="btn btn-warning waves-effect waves-light m-t-10">
+                                            Mark for later
+                                        </button>-->
+                                    </div>
+                                    <div class="col-md-4">
+                                        <button onclick="getNextQuestion()"  class="btn btn-info waves-effect waves-light m-t-10" id="nextQues">
+                                            Next
+                                            ►
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Right panel -->
+    <!-- ============================================================== -->
+    <aside class="right-side-panel">
+        <div class="row">
+            <!-- Weather Widget -->
+            <div class="col-md-12 m-t-10">
+                <span class="text-themecolor m-b-0 cs-h3 cs-bold">
+                    <span>Time Left </span><br>
+                    <input id="minutes" type="text" style="width: 45px; border: none;color:#398bf7;" disabled>Min
+                    <font size="5">:</font> 
+       
+               <input id="seconds" type="text" style="width: 30px; border: none;color:#398bf7;" disabled> Sec
+                <hr>
+                <h5>Mon, January-27 4 PM</h5>
+                <hr>
+                </span>
+
+                <table class="table">
+                    <tr>
+                        <td> Attempted Questions</td>
+                        <td class="text-right font-medium" id="attemptedQues"></td>
+                    </tr>
+                    <tr>
+                        <td> Unattempted Questions</td>
+                        <td class="text-right font-medium" id="unAttemptedQues"></td>
+                    </tr>
+                    <tr>
+                        <td> </td>
+                        <td class="text-right font-medium"></td>
+                    </tr>
+                </table>
+                <hr>
+                <button type="submit" class="btn btn-info waves-effect waves-light m-t-10" id="sa-endtst">
+                    Finish Test
+                </button>
+            </div>
+        </div>
+        <!-- End Weather Widget -->
+        </div>
+    </aside>
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Container fluid  -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- footer -->
+    <!-- ============================================================== -->
+    <footer class="footer"> © 2020 </footer>
+    <!-- ============================================================== -->
+    <!-- End footer -->
+    <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Page wrapper  -->
+    <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="../assets/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap popper Core JavaScript -->
+    <script src="../assets/plugins/bootstrap/js/popper.min.js"></script>
+    <script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- slimscrollbar scrollbar JavaScript -->
+    <script src="js/perfect-scrollbar.jquery.min.js"></script>
+    <!--Wave Effects -->
+    <script src="js/waves.js"></script>
+    <!--Menu sidebar -->
+    <script src="js/sidebarmenu.js"></script>
+    <!--Custom JavaScript -->
+    <script src="js/custom.min.js"></script>
+    <script>
+        var allQuestions;
+        var allQuestionsWithAnswers;
+      
+        $(document).ready(function () {
+            $.ajax({
+                url: '../DataAccess/dummy.php',
+                async: true,
+                type: 'POST',
+               // data: { studentId: studentId, testId: testId },
+                dataType: 'json',
+                success: function (data, status) {
+                    var item = JSON.stringify(data);
+                    Obj = JSON.parse(item);
+                    console.log('here')
+                    console.log(Obj)
+                    
+                }
+            });
+          checkUserLoggedIn();
+            getAllQuestions();
+          
+        });
+
+
+//set minutes 
+
+var mins = localStorage.testTime; 
+
+
+
+//calculate the seconds 
+
+var secs = mins * 60; 
+
+
+
+//countdown function is evoked when page is loaded 
+
+function countdown() { 
+
+    setTimeout('Decrement()', 60); 
+
+} 
+
+
+
+//Decrement function decrement the value. 
+
+function Decrement() { 
+
+    if (document.getElementById) { 
+
+        minutes = document.getElementById("minutes"); 
+
+        seconds = document.getElementById("seconds"); 
+
+
+
+        //if less than a minute remaining 
+
+        //Display only seconds value. 
+
+        if (seconds < 59) { 
+
+            seconds.value = secs; 
+
+        } 
+
+
+
+        //Display both minutes and seconds 
+
+        //getminutes and getseconds is used to 
+
+        //get minutes and seconds 
+
+        else { 
+
+            minutes.value = getminutes(); 
+
+            seconds.value = getseconds(); 
+
+        } 
+
+        //when less than a minute remaining 
+
+        //colour of the minutes and seconds 
+
+        //changes to red 
+
+        if (mins < 1) { 
+
+            minutes.style.color = "red"; 
+
+            seconds.style.color = "red"; 
+
+        } 
+
+        //if seconds becomes zero, 
+
+        //then page alert time up 
+
+        if (mins < 0) { 
+
+           
+
+            minutes.value = 0; 
+
+            seconds.value = 0; 
+            alert("Time Finished! You are not allowed to answer further")
+            finishTest(allQuestionsWithAnswers);
+
+        } 
+
+        //if seconds > 0 then seconds is decremented 
+
+        else { 
+
+            secs--; 
+
+            setTimeout('Decrement()', 1000); 
+
+        } 
+
+    } 
+
+} 
+
+
+
+function getminutes() { 
+
+    //minutes is seconds divided by 60, rounded down 
+
+    mins = Math.floor(secs / 60); 
+
+    return mins; 
+
+} 
+
+
+
+function getseconds() { 
+
+    //take minutes remaining (as seconds) away  
+
+    //from total seconds remaining 
+
+    return secs - Math.round(mins * 60); 
+
+} 
+
+
+        function getAllQuestions() {
+            var studentId = localStorage.userid;
+            var testId = localStorage.testId;
+            $.ajax({
+                url: '../DataAccess/getAllQuestions.php',
+                async: true,
+                type: 'POST',
+                data: { studentId: studentId, testId: testId },
+                dataType: 'json',
+                success: function (data, status) {
+                    var item = JSON.stringify(data);
+                    Obj = JSON.parse(item);
+                   
+                    allQuestions = Obj;
+                    allQuestionsWithAnswers = allQuestions;
+                    for (var i = 0; i < allQuestions.length; i++) {
+                        allQuestionsWithAnswers[i].answer = null;
+                        allQuestionsWithAnswers[i].studentId = localStorage.userid;
+                    }
+                   
+                    var html = '';
+
+                    
+                    if (allQuestions[0].question_no == 1) {
+                        document.getElementById("prevQues").disabled = true;
+                    }
+
+
+                   
+                    $('#qNo').html(allQuestions[0].question_no);
+                    $('#qText').html(allQuestions[0].question_text);
+                    $('#option_a').html(allQuestions[0].option_a);
+                    $('#option_b').html(allQuestions[0].option_b);
+                    $('#option_c').html(allQuestions[0].option_c);
+                    $('#option_d').html(allQuestions[0].option_d);
+
+                    getAttemptedQues();                    
+                    getTotalQuestionsCount();
+                }
+            });
+        }
+       
+        function getTotalQuestionsCount() {
+          
+            //alert('here')
+            var html = '';
+            var count = Object.keys(allQuestionsWithAnswers).length;
+            console.log(count)
+            
+
+            for (var i = 0; i < allQuestionsWithAnswers.length; i++) {
+               
+                html += ' <li><a href="#" onclick="getQuestionFromList(' + allQuestionsWithAnswers[i].question_no + ')">Question No. ';
+                html += allQuestionsWithAnswers[i].question_no;
+                html += '</a ></li> ';
+                //html += '<li><a href="#">Question 20 </a></li>';
+             
+            }
+
+            $("#testName").html(localStorage.subjectName + '  - <span style="font-size:15px">  ' + localStorage.testName +'</span>');
+            $("#quesNo").html(html);
+
+        
+        }
+        
+
+       
+        $('input[type=radio][name=options]').change(function () {
+            var answer = $('input[name=options]:checked').val();
+           var qNo = document.getElementById("qNo").innerHTML;
+            if (allQuestionsWithAnswers[qNo - 1].question_no == qNo) {
+                allQuestionsWithAnswers[qNo - 1].answer = answer;
+            }
+            getAttemptedQues();
+        });
+
+
+        function getQuestionFromList(qNos) {
+            var qNo = qNos - 1;
+            
+
+            if (qNo == 0) {
+                document.getElementById("prevQues").disabled = true;
+                document.getElementById("nextQues").disabled = false;
+
+            }
+            
+            else if (allQuestions.length == qNos) {
+                document.getElementById("prevQues").disabled = false;
+                document.getElementById("nextQues").disabled = true;
+
+            }
+            else {
+                document.getElementById("prevQues").disabled = false;
+                document.getElementById("nextQues").disabled = false;
+
+            }
+
+            $('#qNo').html(allQuestions[qNo].question_no);
+            $('#qText').html(allQuestions[qNo].question_text);
+            $('#option_a').html(allQuestions[qNo].option_a);
+            $('#option_b').html(allQuestions[qNo].option_b);
+            $('#option_c').html(allQuestions[qNo].option_c);
+            $('#option_d').html(allQuestions[qNo].option_d);
+            if (allQuestionsWithAnswers[qNo].answer == null) {
+                var ele = document.getElementsByName("options");
+                for (var i = 0; i < ele.length; i++)
+                    ele[i].checked = false;
+            }
+            else if (allQuestionsWithAnswers[qNo].answer != null) {
+                $('#radio_' + allQuestionsWithAnswers[qNo].answer).prop('checked', true);
+            }
+
+            getAttemptedQues();
+
+            
+        }
+
+        function getNextQuestion() {
+            var qNo = document.getElementById("qNo").innerHTML;
+            var qNos= parseInt(qNo);
+            var qNos = qNos + 1;
+          
+            if (qNo == 0) {
+                document.getElementById("prevQues").disabled = true;
+                document.getElementById("nextQues").disabled = false;
+
+            }
+
+            else if (allQuestions.length == qNos) {
+                document.getElementById("prevQues").disabled = false;
+                document.getElementById("nextQues").disabled = true;
+
+            }
+            else {
+                document.getElementById("prevQues").disabled = false;
+                document.getElementById("nextQues").disabled = false;
+
+            }
+            $('#qNo').html(allQuestions[qNo].question_no);
+            $('#qText').html(allQuestions[qNo].question_text);
+            $('#option_a').html(allQuestions[qNo].option_a);
+            $('#option_b').html(allQuestions[qNo].option_b);
+            $('#option_c').html(allQuestions[qNo].option_c);
+            $('#option_d').html(allQuestions[qNo].option_d);
+            if (allQuestionsWithAnswers[qNo].answer == null) {
+                var ele = document.getElementsByName("options");
+                for (var i = 0; i < ele.length; i++)
+                    ele[i].checked = false;
+            }
+            else if (allQuestionsWithAnswers[qNo].answer != null) {
+                $('#radio_' + allQuestionsWithAnswers[qNo].answer).prop('checked', true);
+            }
+           
+            
+            getAttemptedQues();
+
+        }
+
+
+        function getPreviousQuestion() {
+            var qNo = document.getElementById("qNo").innerHTML;
+            var qNos = parseInt(qNo);
+            qNos = qNos - 1;
+            qNo = qNo - 2;
+           
+           
+
+            
+
+            if (qNo == 0) {
+                document.getElementById("prevQues").disabled = true;
+                document.getElementById("nextQues").disabled = false;
+
+            }
+            else if (allQuestions.length == qNos) {
+                document.getElementById("prevQues").disabled = false;
+                document.getElementById("nextQues").disabled = true;
+
+            }
+            else {
+                document.getElementById("prevQues").disabled = false;
+                document.getElementById("nextQues").disabled = false;
+
+            }
+
+           
+            $('#qNo').html(allQuestions[qNo].question_no);
+            $('#qText').html(allQuestions[qNo].question_text);
+            $('#option_a').html(allQuestions[qNo].option_a);
+            $('#option_b').html(allQuestions[qNo].option_b);
+            $('#option_c').html(allQuestions[qNo].option_c);
+            $('#option_d').html(allQuestions[qNo].option_d);
+            if (allQuestionsWithAnswers[qNo].answer == null) {
+                var ele = document.getElementsByName("options");
+                for (var i = 0; i < ele.length; i++)
+                    ele[i].checked = false;
+            }
+            else if (allQuestionsWithAnswers[qNo].answer != null) {
+                $('#radio_'+allQuestionsWithAnswers[qNo].answer).prop('checked', true);
+            }
+            getAttemptedQues();
+          
+
+        }
+
+        function getAttemptedQues() {
+
+            var attemptedQues = 0;
+            var unAttemptedQues = 0;
+            for (var i = 0; i < allQuestionsWithAnswers.length; i++) {
+                if (allQuestionsWithAnswers[i].answer == null) {
+                    unAttemptedQues++;
+                }
+                else {
+                    attemptedQues++;
+                }
+            }
+            $("#attemptedQues").html(attemptedQues);
+            $("#unAttemptedQues").html(unAttemptedQues);
+
+
+        }
+        $('#sa-endtst').click(function () {
+            swal({
+                title: "Finish Test",
+                text: "Are you sure you want to end test?",
+                type: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#DD6B55",
+                confirmButtonText: "Yes, Finish Test",
+                cancelButtonText: "No, Continue test",
+                closeOnConfirm: false,
+                closeOnCancel: false
+            }, function (isConfirm) {
+                if (isConfirm) {
+                    swal({ title: "End Test", text: "Press OK to End test.", type: "error" },
+                        function (isConfirm) {
+                            if (isConfirm) {
+                                console.log(allQuestionsWithAnswers)
+                                 finishTest(allQuestionsWithAnswers);
+                                
+                               
+                            }
+                        });
+
+                } else {
+                    swal("Test Cancelled", "Better Of Luck", "success");
+                }
+            });
+        });
+        function finishTest(allQuestionsWithAnswers)
+        {
+            $.ajax({
+                                    url: '../DataAccess/calculateResult.php',
+                                    async: false,
+                                    type: 'POST',
+                                    data: { test: allQuestionsWithAnswers },
+                                    dataType: 'text',
+                                    success: function (data, status) {
+                                       console.log(data)
+                                        window.location.href = "result.html";
+                                    }
+                                });
+        }
+        function checkUserLoggedIn() {
+            var fName = localStorage.fullName;
+            var emailId = localStorage.emailId;
+            var id = localStorage.id;
+            //var fName = getCookie("fullName");
+            //var eId = getCookie("emailId");
+            //var pswd = getCookie("password");
+            //alert(fName);
+            if (fName != null || emailId != null || id != null) {
+                $(".username").html(fName);
+               
+            }
+            else {
+                window.location.replace("index.html");
+                 
+            }
+        }
+
+        function userLogOut() {
+            localStorage.removeItem("fullName");
+            localStorage.removeItem("userid");
+            localStorage.removeItem("emailId");
+            window.location.replace("index.html");
+        }
+        $("#logOut").click(function () {
+            userLogOut();
+        });
+
+    </script>
+    <!-- Sweet-Alert  -->
+    <script src="../assets/plugins/sweetalert/sweetalert.min.js"></script>
+    <script src="../assets/plugins/sweetalert/jquery.sweet-alert.custom.js"></script>
+    <!-- ============================================================== -->
+    <!-- This page plugins -->
+    <!-- ============================================================== -->
+    <!--sparkline JavaScript -->
+    <script src="../assets/plugins/sparkline/jquery.sparkline.min.js"></script>
+    <!--morris JavaScript -->
+    <script src="../assets/plugins/chartist-js/dist/chartist.min.js"></script>
+    <script src="../assets/plugins/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.min.js"></script>
+    <!--c3 JavaScript -->
+    <script src="../assets/plugins/d3/d3.min.js"></script>
+    <script src="../assets/plugins/c3-master/c3.min.js"></script>
+    <!-- Popup message jquery -->
+    <script src="../assets/plugins/toast-master/js/jquery.toast.js"></script>
+    <!-- Chart JS -->
+    <script src="js/dashboard1.js"></script>
+    <!-- ============================================================== -->
+    <!-- Style switcher -->
+    <!-- ============================================================== -->
+    <script src="../assets/plugins/styleswitcher/jQuery.style.switcher.js"></script>
+</body>
+
+</html>
